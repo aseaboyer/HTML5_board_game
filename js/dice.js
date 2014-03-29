@@ -9,7 +9,9 @@ function Dice(numSides){
 	this.roll = function() {
 		// roll a random value between 1 and the number of sides
 		
-		value = Math.floor((Math.random()*numSides)+1);
+		value = Math.floor((Math.random()*this.sides)+1);
+		
+		return value; //overloaded return
 	}
 	
 	this.get_value = function() {
